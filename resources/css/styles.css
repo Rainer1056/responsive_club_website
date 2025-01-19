@@ -36,7 +36,8 @@ a {
     border: 2px solid black;
     border-radius: 20px;
     text-decoration: none;
-    background-color: #FFDF00; 
+    background-color: #FFDF00;
+    color: black;
 
 }
 
