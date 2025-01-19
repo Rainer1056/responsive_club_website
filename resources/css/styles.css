@@ -1,0 +1,246 @@
+
+body {
+    background-color: slategray; 
+    margin: 0;
+    padding: 0;
+
+}
+
+@font-face {
+    font-family: sourceserif4;
+    src: url('../Fonts/sourceserif4/SourceSerif4-VariableFont_opsz\,wght.ttf');
+    src: url('../Fonts/sourceserif4/SourceSerif4-Italic-VariableFont_opsz\,wght.ttf')
+}
+
+h1, h2, h3, h4, p {
+    font-family: sourceserif4;
+    color: yellow;
+}
+
+a {
+    font-family: sourceserif4;
+}
+
+.header {
+    min-height: 4rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: wrap;
+    background-color: teal;
+
+}
+
+.header a {
+    padding: 0.75rem;
+    border: 2px solid black;
+    border-radius: 20px;
+    text-decoration: none;
+    background-color: #FFDF00; 
+
+}
+
+.header a:hover {
+    animation-name: hover-change;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hover-change {
+    from {background-color: #FFDF00;}
+    to {background-color: yellow;}
+}
+
+.header a:visited {
+    color: black;
+}
+
+
+.club-name {
+    height: 30rem;
+    background-image: url("../images/jeshoots-com-fzOITuS1DIQ-unsplash.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 50% 45%;
+}
+.club-name h1 {
+    text-align: center;
+    background-color: rgba(0, 128, 128, 0.5);
+    padding: 1rem;
+    position: relative;
+    top: 40%;
+}
+
+.club-mission {
+    min-height: 10rem;
+    padding-left: 1rem;
+    background-color: teal;
+}
+.club-mission h1 {
+    padding-top: 1rem;
+}
+
+.image-gallery {
+    min-height: 16rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    display: flex;
+    flex-flow: row wrap;
+    gap: 15px;
+}
+
+.image-container {
+    height: 15rem;
+    width: 15rem;
+    border: 1px solid yellow;
+}
+.image1, .image2, .image3, .image4 {
+    background-size: cover;
+}
+.image1 {
+    background-image: url('../images/thomas-buchholz-0n7_eiAQZwA-unsplash.png');
+}
+.image2 {
+    background-image: url('../images/dave-photoz-BDIFIT1ILDs-unsplash.png');
+}
+.image3 {
+    background-image: url('../images/clint-bustrillos-X-A-LJVAhzk-unsplash.png');
+}
+.image4 {
+    background-image: url('../images/shannon-fischer-_NEj6M2rrgE-unsplash.png');
+    background-position: bottom;
+}
+
+.quotes {
+    min-height: 15rem;
+    padding-left: 1rem;
+    background-color: teal;
+}
+.quotes h1 {
+    padding-top: 3rem;
+}
+
+.join-us {
+    height: 30rem;
+    background-image: url('../images/2h-media-7gagNAbWocg-unsplash.png');
+    background-size: cover;
+}
+.join-us-word {
+    text-align: center;
+    position: relative;
+    top: 40%;
+    padding: 0.75rem;
+    background-color: rgba(0, 128, 128, 0.5);
+
+}
+.wheretogo {
+   min-height: 5rem;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-wrap: wrap;
+   padding-top: 1rem;
+}
+.wheretogo h2 {
+    font-size: 2rem;
+    padding: 2rem;
+    border: 2px solid yellow;
+    background-color: teal;
+}
+
+.footer {
+    height: 3rem;
+    background-color: teal;
+}
+.footer a {
+    color: yellow;
+}
+.footer a:hover {
+    text-decoration: none;
+}
+.footer h4 {
+    padding-top: 1rem;
+    padding-left: 1rem;
+}
+
+@media only screen and (max-width: 320px) {
+    .header a {
+        font-size: .7rem;
+        padding: .5rem;
+    }
+    .club-mission {
+        padding-bottom: 1rem;
+    }
+    .club-mission h1 {
+        font-size: 1.5rem;
+    }
+    .club-mission h2 {
+        font-size: 1rem;
+    }
+    .image-container {
+        height: 13rem;
+        width: 13rem;
+    }
+    .quotes {
+        padding-bottom: 1rem;
+    }
+    .quotes h1 {
+        font-size: 1.3rem;
+    }
+    .wheretogo h2 {
+        font-size: 1.6rem;
+        padding: 1rem;
+        width: 14rem;
+    }
+    .footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .header a {
+        font-size: 0.8rem;
+    }
+    .footer {
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .club-mission {
+        padding-bottom: 1rem;
+    }
+    .club-mission h2 {
+        font-size: 1.3rem;
+        width: 95%;
+    }
+    .quotes h1 {
+        padding-top: 2rem;
+        font-size: 1.9rem;
+        width: 95%;
+    }
+    .wheretogo h2 {
+        width: 62%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .wheretogo h2 {
+        width: 60%;
+    }
+    .quotes {
+        padding-bottom: .5rem;
+    }
+}
+
+@media only screen and (max-width: 980px) {
+    .club-mission {
+        padding-bottom: .5rem;
+    }
+    .club-mission h2 {
+        width: 90%;
+    }
+    .quotes h1 {
+        width: 90%;
+    }
+}
